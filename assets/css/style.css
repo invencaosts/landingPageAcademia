@@ -12,6 +12,7 @@
   --color-transparent: transparent;
 
   --font-khand: "Khand", sans-serif;
+  --font-mulish: "Mulish", sans-serif;
 }
 
 /* Início cabeçalho */
@@ -136,6 +137,19 @@ header a {
   border-radius: 6px;
 }
 /* Fim da propaganda */
+
+footer {
+  text-align: center;
+
+  font-family: var(--font-mulish);
+
+  background-color: var(--color-yellow);
+
+  padding: 0.2rem;
+
+  position: sticky;
+  bottom: 0px;
+}
 
 @media (min-width: 760px) {
   /* Início cabeçalho responsivo */
