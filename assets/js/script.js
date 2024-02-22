@@ -1,6 +1,9 @@
 // Código cabeçalho início
-function btnNav() {
+function btnMenu() {
   const listaHeader = document.querySelector(".listaHeader");
+
+  const width = window.innerWidth <= 770 ? "none" : "";
+  listaHeader.style.display = width;
 
   document.addEventListener("click", (e) => {
     const el = e.target;
@@ -11,5 +14,5 @@ function btnNav() {
     }
   });
 }
-btnNav();
+btnMenu();
 // Código cabeçalho fim
