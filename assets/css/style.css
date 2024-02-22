@@ -9,7 +9,7 @@
   --color-yellow: #ffc806;
   --color-transparent: transparent;
 
-  --font-khan: "Khand", sans-serif;
+  --font-khand: "Khand", sans-serif;
 }
 
 /* Início cabeçalho */
@@ -23,7 +23,7 @@ header {
 
   background-color: var(--color-black);
 
-  font-family: var(--font-khan);
+  font-family: var(--font-khand);
   font-weight: 700;
   font-style: normal;
   font-size: 15px;
@@ -72,6 +72,24 @@ header a {
   height: 25px;
 }
 /* Fim cabeçalho */
+
+.propaganda {
+  display: flex;
+
+  font-family: var(--font-khand);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.imgPropaganda img {
+  width: 100%;
+}
+
+.textoPropaganda {
+  position: absolute;
+
+  right: 0;
+}
 
 @media (min-width: 770px) {
   /* Início cabeçalho responsivo */
