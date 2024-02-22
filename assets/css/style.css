@@ -7,6 +7,8 @@
 :root {
   --color-black: #000000;
   --color-yellow: #ffc806;
+  --color-yellow-048: hsla(47, 100%, 51%, 0.484);
+  --color-white: #ffffff;
   --color-transparent: transparent;
 
   --font-khand: "Khand", sans-serif;
@@ -19,14 +21,14 @@ header {
   justify-content: space-between;
 
   width: 100vw;
-  height: 90px;
+  height: 3.125rem;
 
   background-color: var(--color-black);
 
   font-family: var(--font-khand);
   font-weight: 700;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 header a {
@@ -35,7 +37,7 @@ header a {
 }
 
 .titutloNav {
-  margin-left: 100px;
+  margin-left: 3.125rem;
 }
 
 .titulo {
@@ -53,16 +55,18 @@ header a {
   border: var(--color-yellow) 2px solid;
 
   position: absolute;
-  margin-right: 50px;
+  margin-right: 1.5rem;
   right: 0;
 
   list-style-type: none;
 
-  margin-top: 20px;
+  margin-top: 1.25rem;
+
+  z-index: 2;
 }
 
 .menuBar {
-  margin-right: 100px;
+  margin-right: 3.125rem;
 }
 
 .material-symbols-outlined {
@@ -73,47 +77,104 @@ header a {
 }
 /* Fim cabeçalho */
 
+/* Início da propaganda */
 .propaganda {
   display: flex;
 
   font-family: var(--font-khand);
   font-weight: 700;
   font-style: normal;
+  font-size: 0.8rem;
+
+  color: var(--color-white);
+
+  text-align: center;
+}
+
+.propaganda span {
+  color: var(--color-yellow);
 }
 
 .imgPropaganda img {
-  width: 100%;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .textoPropaganda {
   position: absolute;
 
   right: 0;
+
+  margin-right: 4rem;
+  margin-top: 1.5rem;
+
+  z-index: 1;
 }
 
-@media (min-width: 770px) {
+#textoPropagandaFundoPreto {
+  background-color: var(--color-black);
+
+  padding: 2px;
+}
+
+.textoPropaganda button {
+  background-color: var(--color-yellow-048);
+  color: var(--color-white);
+
+  font-family: var(--font-khand);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.5rem;
+
+  padding: 5px;
+
+  width: 4rem;
+
+  border: none;
+  border-radius: 6px;
+}
+/* Fim da propaganda */
+
+@media (min-width: 760px) {
   /* Início cabeçalho responsivo */
   .menuBar {
     display: none;
   }
 
   header {
-    font-size: 22px;
+    font-size: 0.8rem;
   }
 
   .listaHeader {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 2rem;
 
     border: none;
 
     margin-top: 0;
-    margin-right: 100px;
+    margin-right: 1.5rem;
 
     position: relative;
 
     background-color: var(--color-transparent);
   }
   /* Fim cabeçalho responsivo */
+
+  /* Início da propaganda responsivo */
+  .textoPropaganda {
+    font-size: 1.875rem;
+
+    margin-right: 6.25rem;
+    margin-top: 3.125rem;
+  }
+
+  .textoPropaganda button {
+    width: 180px;
+
+    font-size: 0.938rem;
+  }
+  /* Fim da propaganda responsivo*/
 }
