@@ -5,9 +5,12 @@
 }
 
 :root {
+  --color-white: #fff;
   --color-black: #000000;
   --color-yellow: #ffc806;
   --color-transparent: transparent;
+  --color-primary: #ec994b;
+  --color-cinza: #b8b8b841;
 
   --font-khand: "Khand", sans-serif;
 }
@@ -90,6 +93,66 @@ header a {
 
   right: 0;
 }
+
+/* slide de preços */
+.main{
+  width: 100vw;
+}
+
+.title-container{
+  text-align: center;
+}
+
+.card-preços{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+ 
+
+}
+
+.item{
+  background-color: var(--color-white);
+  border-radius: 0.8rem;
+  border: solid 1px var(--color-cinza);
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item img{
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.title-card{
+  background-color: var(--color-yellow);
+  width: 250px;
+  height: 40px;
+  font-size: 23px;
+  font-family: var(--font-khand);
+  text-align: center;
+
+}
+
+.details{
+  background-color: var(--color-white);
+  position: relative;
+  text-align: center;
+}
+
+.line{
+  width: 180px;
+  height: 2px;
+  border-radius: 1px;
+  border: solid 2px var(--color-cinza);
+
+}
+
+/* fim de slide de preços/ */
+
 
 @media (min-width: 770px) {
   /* Início cabeçalho responsivo */
