@@ -117,69 +117,6 @@ header a {
   z-index: 1;
 }
 
-<<<<<<< HEAD
-/* slide de preços */
-.main{
-  width: 100vw;
-}
-
-.title-container{
-  text-align: center;
-}
-
-.card-preços{
-  display: flex;
-  justify-content: center;
-  gap: 60px;
- 
-
-}
-
-.item{
-  background-color: var(--color-white);
-  border-radius: 0.8rem;
-  border: solid 1px var(--color-cinza);
-  width: 250px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-}
-
-.item img{
-  width: 250px;
-  height: 120px;
-  object-fit: cover;
-}
-
-.title-card{
-  background-color: var(--color-yellow);
-  width: 250px;
-  height: 40px;
-  font-size: 23px;
-  font-family: var(--font-khand);
-  text-align: center;
-
-}
-
-.details{
-  background-color: var(--color-white);
-  position: relative;
-  text-align: center;
-}
-
-.line{
-  width: 180px;
-  height: 2px;
-  border-radius: 1px;
-  border: solid 2px var(--color-cinza);
-
-}
-
-/* fim de slide de preços/ */
-
-
-@media (min-width: 770px) {
-=======
 #textoPropagandaFundoPreto {
   background-color: var(--color-black);
 
@@ -202,7 +139,66 @@ header a {
   border: none;
   border-radius: 6px;
 }
-/* Fim da propaganda */
+/* Final Propaganda */
+
+/* slide de preços */
+section {
+  width: 100vw;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.card-preços {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+
+
+}
+
+.item {
+  background-color: var(--color-white);
+  border-radius: 0.8rem;
+  border: solid 1px var(--color-cinza);
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item img {
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.title-card {
+  background-color: var(--color-yellow);
+  width: 250px;
+  height: 40px;
+  font-size: 23px;
+  font-family: var(--font-khand);
+  text-align: center;
+
+}
+
+.details {
+  background-color: var(--color-white);
+  position: relative;
+  text-align: center;
+}
+
+.line {
+  width: 180px;
+  height: 2px;
+  border-radius: 1px;
+  border: solid 2px var(--color-cinza);
+
+}
+
+/* fim de slide de preços/ */
 
 footer {
   text-align: center;
@@ -218,7 +214,7 @@ footer {
 }
 
 @media (min-width: 760px) {
->>>>>>> d95d6b45c331d71571f09476f3b51806302161ca
+
   /* Início cabeçalho responsivo */
   .menuBar {
     display: none;
@@ -242,6 +238,7 @@ footer {
 
     background-color: var(--color-transparent);
   }
+
   /* Fim cabeçalho responsivo */
 
   /* Início da propaganda responsivo */
@@ -253,9 +250,10 @@ footer {
   }
 
   .textoPropaganda button {
-    width: 180px;
+    width: 8rem;
 
-    font-size: 0.938rem;
+    font-size: 1rem;
   }
+
   /* Fim da propaganda responsivo*/
 }
