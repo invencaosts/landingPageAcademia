@@ -8,11 +8,12 @@
   --color-white: #fff;
   --color-black: #000000;
   --color-yellow: #ffc806;
-  --color-yellow-048: hsla(47, 100%, 51%, 0.484);
+  --color-yellow-048: hsla(47, 100%, 51%, 0.712);
   --color-white: #ffffff;
   --color-transparent: transparent;
   --color-primary: #ec994b;
   --color-cinza: #b8b8b841;
+  --color-gray: #c0b9b96b;
 
   --font-khand: "Khand", sans-serif;
   --font-mulish: "Mulish", sans-serif;
@@ -149,6 +150,10 @@ section {
 .title-container {
   text-align: center;
   margin-top: 65px;
+  font-family: var(--font-khand);
+  font-weight: 700;
+  font-size: 1.5rem;
+
 }
 
 .card-preços {
@@ -156,22 +161,32 @@ section {
   justify-content: center;
   gap: 60px;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
+
 
 .item {
   background-color: var(--color-white);
+  box-shadow: 0 0 8px 3px var(--color-cinza);
   border-radius: .6rem;
   border: solid 1px var(--color-cinza);
   width: 250px;
-  height: 400px;
+  height: 350px;
   display: flex;
   flex-direction: column;
+  transition: all transform .2s;
 }
-
+.item:hover{
+  transform: scale(1.1);
+}
 .item img {
   width: 100%;
   object-fit: cover;
  
+}
+.preço{
+  margin-top: .6rem;
+  font-family: var(--font-khand);
 }
 
 .title-card {
@@ -181,7 +196,7 @@ section {
   font-size: 23px;
   font-family: var(--font-khand);
   text-align: center;
-  display: block;
+  padding-top: 4px;
 }
 
 .details {
@@ -190,13 +205,54 @@ section {
 }
 
 .line {
-  width: 180px;
-  height: 2px;
+  margin-top: .2rem;
+  margin-left: 25px;
+  width: 200px;
   border-radius: 1px;
-  border: solid 2px var(--color-cinza);
+  border: solid 1px var(--color-cinza);
+}
+
+.description-text {
+  padding-top: 15px;
+
+  font-family: var(--font-khand);
+  font-weight: 700;
+  font-size: 1.4rem;
+
 }
 
 /* fim de slide de preços/ */
+
+/* começo slider de profissionais */
+
+.slider-container{
+  background-color: var(--color-yellow);
+  height: 500px;
+  margin-top: 180px;
+  margin-bottom: 180px;
+  position: relative;
+}
+
+.card-fotos{
+  display: flex;
+  gap: 30px;
+
+  
+}
+
+.pic img{
+  aspect-ratio: 16/9;
+}
+
+.names{
+  background-color: var(--color-gray);
+  font-family: var(--font-khand);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+/*fim de slider*/
 
 footer {
   text-align: center;
