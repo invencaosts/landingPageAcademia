@@ -233,10 +233,21 @@ section {
 /* começo slider de profissionais */
 
 .slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  gap: 30px;
+
   background-color: var(--color-yellow);
-  height: 500px;
+
+  width: 100vw;
+  height: 700px;
+
   margin-top: 180px;
   margin-bottom: 180px;
+
   position: relative;
 }
 
@@ -250,13 +261,23 @@ section {
 }
 
 .names {
+  width: 300px;
+
   background-color: var(--color-gray);
+
   font-family: var(--font-khand);
   font-weight: 700;
   font-size: 1.5rem;
+
   text-align: center;
+
+  position: absolute;
+  bottom: 128px;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
-/*fim de slider*/
+/*fim de slider de profissionais*/
 
 footer {
   width: 100vw;
